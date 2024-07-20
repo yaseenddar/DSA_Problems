@@ -1,6 +1,7 @@
 /**
  * BiaryTree
  */
+
 public class BiaryTree {
 
    static class Node{
@@ -17,7 +18,7 @@ public class BiaryTree {
 
     /**
      * InnerBiaryTree     */
-  static public class InnerBiaryTree {
+  static class InnerBiaryTree {
        Node root;
        int indxx = -1;
        public Node makeTree(int [] nodes){
@@ -43,7 +44,7 @@ public class BiaryTree {
         if(root.right != null){
             System.err.print("R-"+root.right.data+" ");
         }
-        System.err.println();
+        System.out.println();
         printTree(root.left);
         printTree(root.right);
        }
@@ -55,7 +56,7 @@ public class BiaryTree {
         if(root == null){
             return;
         }
-        System.err.print(root.data+" ");
+        System.out.print(root.data+" ");
         preorderTraversal(root.left);
         preorderTraversal(root.right);
     }
@@ -65,7 +66,7 @@ public class BiaryTree {
         }
         postTraversal(root.left);
         postTraversal(root.right);
-        System.err.print(root.data+" ");
+        System.out.print(root.data+" ");
 
     }
     static public void inorderTraversal(Node root){
@@ -73,7 +74,7 @@ public class BiaryTree {
             return;
         }
         inorderTraversal(root.left);
-        System.err.print(root.data+" ");
+        System.out.print(root.data+" ");
         inorderTraversal(root.right);
 
     }

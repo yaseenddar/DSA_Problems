@@ -1,5 +1,9 @@
 // Problem Statement
 // sort the array using the heap
+/*steps
+(1) first make heapify for the internal nodes only which are n/2 -1
+(2) then after building the min heap or max heap then swap the first with last
+(3) then call the heapify for the elements withput last element;*/
 
 class HeapSort{
 
@@ -24,10 +28,11 @@ class HeapSort{
 	}
 
 	public static void heapSort(int [] arr){
+		// call heapify to build the max or min heap for only internal nodes n/2 -1
 		for(int i = arr.length / 2 - 1; i >= 0 ; i--){
 			heapify(i,arr,arr.length);
 		}
-		// swap the largest to last
+		// swap the largest to last and then call heapify for the remaining without last
 		for(int i = arr.length - 1 ; i >= 0 ; i--){
 			int temp = arr[0];
 			arr[0] = arr[i];

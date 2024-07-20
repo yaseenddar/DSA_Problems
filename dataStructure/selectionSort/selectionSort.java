@@ -1,4 +1,7 @@
-
+// Initialize: Start with the first element of the array as the minimum.
+// Find Minimum: Traverse the array to find the smallest element.
+// Swap: Swap the smallest element with the first element.
+// Repeat: Move to the next element and repeat steps 2-3 until the array is sorted.
 public class selectionSort {
     
     public static void selectionSort(int []arr){

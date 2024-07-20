@@ -4,7 +4,7 @@
 class QuickSort1{
     public static int findPos(int arr[],int start,int end){
         int pivot = start;
-        int left = start;
+        int left = start+1;
         int right = end;
 
         while(left < right){

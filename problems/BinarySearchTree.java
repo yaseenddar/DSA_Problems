@@ -69,7 +69,8 @@ class BinarySearchTree{
 			System.out.println();
 		}
 	}
-	//print the sorted inorder of te tree
+
+	//_______print the sorted inorder of te tree
 	public void inorder(){
 		printInorder(rootOfTree);
 	}
@@ -81,7 +82,8 @@ class BinarySearchTree{
 		System.out.print(root.data + " ");
 		printInorder(root.right);
 	}
-	// search in the tree
+
+	//_______search in the tree
 	public void search(int data){
 		if(rootOfTree == null){
 			System.out.println("No tree found please make tree first");
@@ -90,7 +92,8 @@ class BinarySearchTree{
 		searchHelper(rootOfTree,data);
 
 	}
-	//search helper
+
+	//_______search helper
 	public void searchHelper(Node root , int data){
 		if(root == null){
 			System.out.println("Not found please make other search");
@@ -107,7 +110,8 @@ class BinarySearchTree{
 			searchHelper(root.left,data);
 		}
 	}
-	// delete Node in the tree
+
+	//_______delete Node in the tree
 	public Node deleteNodeHelper(Node root , int data){
 		if(root.data > data){
 			root.left = deleteNodeHelper(root.left,data);
@@ -128,7 +132,7 @@ class BinarySearchTree{
 		Node LeftSmallestNode = findInorderPredecessor(root.right);
 		System.out.println("left data"+LeftSmallestNode.data);
 		root.data = LeftSmallestNode.data;
-		deleteNodeHelper(LeftSmallestNode,LeftSmallestNode.data);
+		deleteNodeHelper(LeftSmallestNode,LeftSmallestNode.data);// no need to travese again to this predecessor therefore pass this node
 		
 		}
 		return root;
