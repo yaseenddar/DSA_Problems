@@ -12,7 +12,7 @@ class prsctive {
 			ch = str.charAt(i);
 			if(ch == ' '){
 				s.append(ch);
-				ch = str.charAt(i+1) + 33;
+				ch =(char) str.charAt(i+1) + 33;
 				
 		}
 		s.append(ch);
