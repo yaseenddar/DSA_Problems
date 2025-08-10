@@ -5,7 +5,7 @@
 // it is easy to implement and can be useful for small arrays or nearly-sorted data.
 
 public class bubbleSort {
-
+ // 6 8 4 0 6 3 O(n2)
     public static void bubbleSort(int []arr){
         for(int i = 0 ; i < arr.length - 1 ; i++){
             for(int j = 0 ; j < arr.length - 1 - i ; j++){
