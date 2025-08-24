@@ -38,7 +38,7 @@ class FindInRotated{
 return -1;
 }
 	public static void main(String[] args) {
-		int arr[] = new int[]{4,5,6,0,1,2,3};
+		int arr[] = new int[]{3,4,5,6,0,1,2};
 		System.out.println(findInRotated(arr,10));
 	}
 }

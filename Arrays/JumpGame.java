@@ -1,3 +1,4 @@
+
 // this problem includes reaching to the last index bu jumping from curr i + nums[i] if yes return true
 // else return false
 class JumpGame{
